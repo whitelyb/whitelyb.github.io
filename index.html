@@ -125,6 +125,17 @@
       
         <h2 id="Github-Pages-结合-Hexo-搭建个人静态博客"><a href="#Github-Pages-结合-Hexo-搭建个人静态博客" class="headerlink" title="Github Pages 结合 Hexo 搭建个人静态博客"></a>Github Pages 结合 Hexo 搭建个人静态博客</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动本地预览服务，默认是 127.0.0.1:4000</span></span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建文章</span></span><br><span class="line">hexo new 文章标题</span><br></pre></td></tr></table></figure>
 
+<h3 id="自动发布-Hexo-搭建的静态博客"><a href="#自动发布-Hexo-搭建的静态博客" class="headerlink" title="自动发布 Hexo 搭建的静态博客"></a>自动发布 Hexo 搭建的静态博客</h3><p>第一: 先修改 <code>_config.yml</code> 配置文件:</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://whitelyb:lyb13545067842@github.com/whitelyb/whitelyb.github.io.git</span></span><br></pre></td></tr></table></figure>
+
+<p>第二: 安装自动发布的插件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>第三: 使用命令一键进行发布:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --deploy</span><br><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure>
+
+<p>上面两条命令都可以，发布可能有延迟，稍微等待即可。</p>
+
       
     </div>
     <footer class="article-footer">
