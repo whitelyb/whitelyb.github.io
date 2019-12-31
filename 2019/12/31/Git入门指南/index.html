@@ -15,7 +15,7 @@
 <meta property="og:description" content="Github Pages 结合 Hexo 搭建个人静态博客123456789npm install -g hexo-clihexo init blogcd blog# 启动本地预览服务，默认是 127.0.0.1:4000hexo server# 新建文章hexo new 文章标题  自动发布 Hexo 搭建的静态博客第一: 先修改 _config.yml 配置文件: 123deploy:  ty">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-12-31T10:55:40.000Z">
-<meta property="article:modified_time" content="2019-12-31T11:38:49.411Z">
+<meta property="article:modified_time" content="2019-12-31T11:41:06.542Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -98,6 +98,10 @@
 
 <p>第三: 使用命令一键进行发布:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --deploy</span><br><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure>
+
+<p>上面两个命令可以简写为:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+
 
 <p>上面两条命令都可以，发布可能有延迟，稍微等待即可。</p>
 
