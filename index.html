@@ -199,7 +199,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="JS知识详解"><a href="#JS知识详解" class="headerlink" title="JS知识详解"></a>JS知识详解</h2><h3 id="判断数组的四种方式"><a href="#判断数组的四种方式" class="headerlink" title="判断数组的四种方式"></a>判断数组的四种方式</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [];</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span><span class="built_in">Array</span>.isArray();</span><br><span class="line">	<span class="built_in">Array</span>.isArray(arr); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2.</span><span class="keyword">instanceof</span></span><br><span class="line">    arr <span class="keyword">instanceof</span> <span class="built_in">Array</span>; <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3.</span><span class="keyword">constructor</span></span><br><span class="line">	arr.<span class="keyword">constructor</span> === Array; // true</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4.</span><span class="built_in">Object</span>.prototype.toString.call()</span><br><span class="line">	<span class="built_in">Object</span>.prototype.toString.call(arr) === <span class="string">'[object Array]'</span>; <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
       
 
       
